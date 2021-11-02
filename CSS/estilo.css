@@ -14,7 +14,7 @@
     
     .header {
         height: 100vh;
-        background-image: url(../IMG/hola.png);
+        background-image: linear-gradient(120deg, #6293e281 0%, #c2e9fb6c 100%), url(../IMG/Mariscos-1068x713.jpg);
         background-repeat: no-repeat;
         background-size: cover;
         background-attachment: fixed;
@@ -28,6 +28,7 @@
         justify-content: center;
         align-items: center;
         flex-direction: column;
+        color: white;
     }
     
     .hamburguer {
