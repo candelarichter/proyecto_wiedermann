@@ -12,15 +12,6 @@
         margin: auto;
     }
     
-    .header {
-        height: 100vh;
-        background-image: linear-gradient(120deg, #6293e281 0%, #c2e9fb6c 100%), url(../IMG/Mariscos-1068x713.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-attachment: fixed;
-        background-position: center;
-    }
-    
     .head {
         padding: 0;
         height: 100%;
@@ -29,6 +20,15 @@
         align-items: center;
         flex-direction: column;
         color: white;
+    }
+    
+    .header {
+        height: 100vh;
+        background-image: linear-gradient(120deg, #6293e200 0%, #c2e9fb00 100%), url(../IMG/fondo1.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        background-position: center
     }
     
     .hamburguer {
