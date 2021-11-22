@@ -8,17 +8,42 @@
     <title>Pescaderia el Faro</title>
     <link rel="shortcut icon" href="IMG/logo2.jpg" type="image/x-icon">
     <link rel="stylesheet" href="CSS/estilo.css">
-    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="CSS/bootstrap-grid.css">
     <link rel="stylesheet" href="CSS/bootstrap.min.css">
-    <script src="JS/bootstrap.min.js"></script>
-    <script src="/JS/main.js"></script>
+    <script src='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' crossorigin='stylesheet'></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tangerine:wght@700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mada&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Carattere&display=swap" rel="stylesheet">
 </head>
 
 
 <body>
 
     <header class="header" id="inicio">
+        <nav class="hermann">
+            <label class="logo">El Faro</label>
+            <div>
+                <ul class="menu-items">
+                    <li class="active"><a href="">Inicio</a></li>
+                    <li><a href="">Productos</a></li>
+                    <li><a href="">Nosotros</a></li>
+                    <li><a href="">Contacto</a></li>
+                </ul>
+            </div>
+            <span class="btn-menu">
+               <img src="img/hamburguesa.svg" alt=".">
+            </span>
+        </nav>
+
         <div class="contenedor head">
             <h1 class="titulo">Pescaderia El Faro</h1>
             <p class="copy">Lo mejor en pescados y mariscos</p>
@@ -27,24 +52,34 @@
 
     <main>
         <div class="menu">
-            <div class="container-md p-5">
-                <div class="row pt-5">
-                    <h2 class="subtitulo">Menu</h2>
+            <h2 class="subtitulo">Productos</h2>
+            <div class="container german">
+                <div class="row boton">
+                    <a class="btn btn-warning listado" href="assets/ListadoProductos.pdf" target="_blank" role="button">Listado de productos</a>
                 </div>
+                <h1 class="menu_semanal">Nuestro Menú semanal</h1>
+            </div>
+            <div class="container-md p-5">
                 <div class="row">
                     <div class="col-sm">
                         <div class="card w-100 card-border mb-5">
+                            <h2 class="yerman">puta</h2>
                             <img src="IMG/foto1.jpg" alt="foto1" height="320">
+                            <h2 class="llerman">$500</h2>
                         </div>
                     </div>
                     <div class="col-sm">
                         <div class="card w-100 card-border mb-5">
+                            <h2 class="yerman">puta</h2>
                             <img src="IMG/foto2.jpg" alt="foto2" height="320">
+                            <h2 class="llerman">$500</h2>
                         </div>
                     </div>
                     <div class="col-sm">
                         <div class="card w-100 card-border mb-5">
+                            <h2 class="yerman">puta</h2>
                             <img src="IMG/foto3.jpg" alt="foto3" height="320">
+                            <h2 class="llerman">$500</h2>
                         </div>
                     </div>
                 </div>
@@ -52,17 +87,23 @@
                 <div class="row">
                     <div class="col-sm">
                         <div class="card w-100 card-border mb-5">
+                            <h2 class="yerman">puta</h2>
                             <img src="IMG/foto4.jpg" alt="foto4" height="320">
+                            <h2 class="llerman">$500</h2>
                         </div>
                     </div>
                     <div class="col-sm">
                         <div class="card w-100 card-border mb-5">
+                            <h2 class="yerman">puta</h2>
                             <img src="IMG/foto5.jpg" alt="foto5" height="320">
+                            <h2 class="llerman">$500</h2>
                         </div>
                     </div>
                     <div class="col-sm">
                         <div class="card w-100 card-border mb-5">
+                            <h2 class="yerman">puta</h2>
                             <img src="IMG/foto6.jpg" alt="foto6" height="320">
+                            <h2 class="llerman">$500</h2>
                         </div>
                     </div>
                 </div>
@@ -71,7 +112,7 @@
         <div class="productos">
             <div class="container-md p-5">
                 <div class="row pt-5">
-                    <h2 class="subtitulo">Nuestros productos</h2>
+                    <h2 class="subtitulo2">Nuestros productos</h2>
                 </div>
                 <div class="row">
                     <div class="col-sm">
@@ -129,9 +170,10 @@
                     <img src="IMG/logo3.jpg" alt="logo3" height="250">
                 </div>
                 <div class="col">
-                    <a href="https://l.facebook.com/l.php?u=https%3A%2F%2Fapi.whatsapp.com%2Fsend%3Fphone%3D542995520191%26fbclid%3DIwAR3xu97fkvjfVRg7KtJLTPdJAcHX1lCmMtnY77anps8L9C-Sydy-HgijX-8&h=AT0jQDyaYeiW84gquy43TywZAV9QNOVDfdAQHGGgyrnYvOzo9HoT0GVDTDj92xbYGs0YyHzRBIESy2r-jX5pK-V1AH2w5OBoW_9TIx4EqOwqKRxhsrv0fm4SuBV8G0DXpiB86g"><img src="IMG/WhatsApp.png" alt="whatsapp" height="35" /></a>
-                    <a href="https://www.facebook.com/pescaderiaelfaro.nqn/photos/a.112687147179300/133271748454173/"><img src="IMG/Facebook.png" alt="Facebook" height="35" /></a>
-                    <a href="https://www.instagram.com/pescaderiaelfaro.nqn/"><img src="IMG/Instagram-logo.png" alt="Instagram" height="35" /></a>
+                    <a href="https://l.facebook.com/l.php?u=https%3A%2F%2Fapi.whatsapp.com%2Fsend%3Fphone%3D542995520191%26fbclid%3DIwAR3xu97fkvjfVRg7KtJLTPdJAcHX1lCmMtnY77anps8L9C-Sydy-HgijX-8&h=AT0jQDyaYeiW84gquy43TywZAV9QNOVDfdAQHGGgyrnYvOzo9HoT0GVDTDj92xbYGs0YyHzRBIESy2r-jX5pK-V1AH2w5OBoW_9TIx4EqOwqKRxhsrv0fm4SuBV8G0DXpiB86g"
+                        target="_blank"><img src="IMG/WhatsApp.png" alt="whatsapp" height="35" /></a>
+                    <a href="https://www.facebook.com/pescaderiaelfaro.nqn/photos/a.112687147179300/133271748454173/" target="_blank"><img src="IMG/Facebook.png" alt="Facebook" height="35" /></a>
+                    <a href="https://www.instagram.com/pescaderiaelfaro.nqn/" target="_blank"><img src="IMG/Instagram-logo.png" alt="Instagram" height="35" /></a>
                 </div>
                 <div class="col">
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3102.82826651724!2d-68.04393438446061!3d-38.95075150772275!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x960a319f71b9922f%3A0xd8000966aa4aa93c!2sEl%20Faro%20Pescaderia!5e0!3m2!1ses-419!2sar!4v1635113752901!5m2!1ses-419!2sar"
