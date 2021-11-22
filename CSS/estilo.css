@@ -112,9 +112,10 @@
     .subtitulo2 {
         text-align: center;
         font-weight: 300;
-        color: steelblue;
+        color: #ECAC5D;
         margin-bottom: 100px;
-        font-size: 250%;
+        font-size: 75px;
+        font-family: 'Cabin Sketch', cursive;
     }
     
     .menu_semanal {
