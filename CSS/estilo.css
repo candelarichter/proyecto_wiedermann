@@ -1,249 +1,308 @@
-    * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-    }
-    
-    .contenedor {
-        padding: 60px 0;
-        width: 90%;
-        max-width: 1200%;
-        overflow: hidden;
-        margin: auto;
-    }
-    
-    .hermann {
-        background-color: #f5b872;
-        height: 75px;
-        width: 100%;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        position: fixed;
-        z-index: 1000;
-    }
-    
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* Pantalla Inicio */
+
+.header {
+    height: 100vh;
+    background-image: linear-gradient(120deg, #6293e200 0%, #c2e9fb00 100%), url(../IMG/fondo1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center
+}
+
+.hermann {
+    background-color: #f5b872;
+    height: 75px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    z-index: 1000;
+}
+
+.logo {
+    color: #fff;
+    font-size: 60px;
+    padding: 0 80px;
+    font-weight: bold;
+    font-family: 'Tangerine', cursive;
+}
+
+.menu-items {
+    display: flex;
+    list-style: none;
+    margin-right: 50px;
+}
+
+.menu-items li {
+    border-radius: 3px;
+    margin: 0 30px;
+}
+
+.menu-items li a {
+    padding: 7px 13px;
+    text-decoration: none;
+    font-size: 18px;
+    display: block;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.menu-items li:hover,
+li.active {
+    background-color: #b96008;
+    transition: .4s;
+}
+
+.btn-menu {
+    margin-right: 30px;
+    font-size: 25px;
+    color: #fff;
+    cursor: pointer;
+    display: none;
+}
+
+ul.show {
+    top: 65px;
+}
+
+@media screen and (max-width: 952px) {
     .logo {
-        color: #fff;
-        font-size: 60px;
-        padding: 0 80px;
-        font-weight: bold;
-        font-family: 'Tangerine', cursive;
+        font-size: 30px;
+        padding-left: 35px;
     }
-    
-    .menu-items {
-        display: flex;
-        list-style: none;
-        margin-right: 50px;
-    }
-    
-    .menu-items li {
-        border-radius: 3px;
-        margin: 0 30px;
-    }
-    
     .menu-items li a {
-        padding: 7px 13px;
-        text-decoration: none;
-        font-size: 18px;
-        display: block;
-        text-transform: uppercase;
-        color: #fff;
+        font-size: 16px;
     }
-    
-    .menu-items li:hover,
-    li.active {
-        background-color: #b96008;
-        transition: .4s;
-    }
-    
-    .btn-menu {
-        margin-right: 30px;
-        font-size: 25px;
-        color: #fff;
-        cursor: pointer;
-        display: none;
-    }
-    
-    .head {
-        padding: 0px;
-        height: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        color: white;
-    }
-    
-    .header {
-        height: 100vh;
-        background-image: linear-gradient(120deg, #6293e200 0%, #c2e9fb00 100%), url(../IMG/fondo1.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-attachment: fixed;
-        background-position: center
-    }
-    
-    .spread {
-        transform: translate(0);
-    }
-    
-    .titulo {
-        font-size: 85px;
-        margin-bottom: 10px;
-        font-family: 'Mada', sans-serif;
-    }
-    
-    .copy {
-        font-weight: 300;
-        font-size: 50px;
-        font-family: 'Carattere', cursive;
-    }
-    
-    .subtitulo {
-        text-align: center;
-        font-weight: 300;
-        color: #ECAC5D;
-        font-size: 75px;
-        padding-top: 70px;
-        font-family: 'Cabin Sketch', cursive;
-    }
-    
-    .subtitulo2 {
-        text-align: center;
-        font-weight: 300;
-        color: #ECAC5D;
-        margin-bottom: 10px;
-        font-size: 75px;
-        font-family: 'Cabin Sketch', cursive;
-    }
-    
-    .menu_semanal {
-        margin-top: 100px;
-        text-align: center;
-        font-size: 45px;
-        font-family: 'Aladin', cursive;
-    }
-    
-    .listado {
-        margin-top: 0px;
-        margin-left: 180px;
-    }
-    
-    .german {
-        margin: 50px;
-        margin-top: 50px;
-    }
-    
-    .boton {
-        width: 650px;
-        padding-left: 322px;
-    }
-    
-    .yerman {
-        background-color: #f8bb38;
-        text-align: center;
-        font-family: 'Aladin', cursive;
-        font-size: 40px;
-        padding: 15px;
-    }
-    
-    .llerman {
-        font-family: 'Aladin', cursive;
-        text-align: center;
-    }
-    
+}
+
+@media screen and (max-width: 858px) {
     .menu {
-        background: #F9F3DF;
+        height: 65px;
     }
-    
-    .contenedor-menu {
-        display: flex;
-        justify-content: space-evenly;
-        flex-wrap: wrap;
+    .btn-menu {
+        display: inline-flex;
     }
-    
-    .slider {
-        padding: 0;
-        width: 100%;
-        margin-left: 395px;
-        overflow: hidden;
+    .menu-items {
+        position: fixed;
+        width: 100vw;
+        height: calc(100% - 65px);
+        background-color: chocolate;
+        top: -100vh;
+        text-align: center;
+        transition: all .4s;
+        flex-direction: column;
     }
-    
-    .slider ul {
-        display: flex;
-        padding: 0;
-        width: 400%;
-        animation: movimiento 20s infinite alternate;
+    .menu-items li {
+        margin: 30px 0 0 0;
+        line-height: 30px;
     }
-    
-    .slider li {
-        width: 100%;
-        list-style: none;
+    .menu-items li:hover {
+        background: none;
     }
-    
-    .slider img {
-        width: 35%;
-        height: 100%
+    .menu-items li a {
+        font-size: 20px;
+        color: cornsilk;
+        font-weight: bold;
     }
-    
-    @keyframes movimiento {
-        0% {
-            margin-left: 0%;
-        }
-        20% {
-            margin-left: 0%;
-        }
-        25% {
-            margin-left: -100%;
-        }
-        45% {
-            margin-left: -100%;
-        }
-        50% {
-            margin-left: -200%;
-        }
-        70% {
-            margin-left: -200%;
-        }
-        75% {
-            margin-left: -300%;
-        }
-        100% {
-            margin-left: -300%;
-        }
+    .menu-items li a:hover {
+        color: crimson;
     }
-    
-    .img-menu {
-        width: 30%;
-        margin-bottom: 5%;
-        box-shadow: 0 0 6 rgba(0, 0, 0, .5);
+    .logo {
+        font-size: 25px;
+        padding-left: 35px;
     }
-    
-    .productos {
-        background: #FFE1AF;
+}
+
+@media screen and (max-width: 858px) and (orientation: landscape) {
+    .menu-items li {
+        margin: 5px 0 0 0;
     }
-    
-    .contenedor-productos {
-        display: flex;
-        justify-content: space-evenly;
-        flex-wrap: wrap;
+    .menu-items {
+        overflow: scroll;
+        height: calc(-100% - 65px);
     }
-    
-    .img-productos {
-        width: 30%;
-        margin-bottom: 5%;
-        box-shadow: 0 0 6 rgba(0, 0, 0, .5);
+}
+
+.head {
+    padding: 0px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+}
+
+.titulo {
+    font-size: 85px;
+    margin-bottom: 10px;
+    font-family: 'Mada', sans-serif;
+}
+
+.copy {
+    font-weight: 300;
+    font-size: 50px;
+    font-family: 'Carattere', cursive;
+}
+
+
+/* Pantalla productos */
+
+.menu {
+    background: #F9F3DF;
+}
+
+.subtitulo {
+    text-align: center;
+    font-weight: 300;
+    color: #ECAC5D;
+    font-size: 75px;
+    padding-top: 70px;
+    font-family: 'Cabin Sketch', cursive;
+}
+
+.german {
+    margin: 50px;
+    margin-top: 50px;
+}
+
+.boton {
+    width: 650px;
+    padding-left: 322px;
+}
+
+.listado {
+    margin-top: 0px;
+    margin-left: 180px;
+}
+
+.menu_semanal {
+    margin-top: 100px;
+    text-align: center;
+    font-size: 45px;
+    font-family: 'Aladin', cursive;
+}
+
+.yerman {
+    background-color: #f8bb38;
+    text-align: center;
+    font-family: 'Aladin', cursive;
+    font-size: 40px;
+    padding: 15px;
+}
+
+.llerman {
+    font-family: 'Aladin', cursive;
+    text-align: center;
+}
+
+
+/* Pantalla Nosotros */
+
+.productos {
+    background: #FFE1AF;
+}
+
+.subtitulo2 {
+    text-align: center;
+    font-weight: 300;
+    color: #ECAC5D;
+    margin-bottom: 10px;
+    font-size: 75px;
+    font-family: 'Cabin Sketch', cursive;
+}
+
+.slider {
+    padding: 0;
+    margin: auto;
+    overflow: hidden;
+    margin-left: 400px;
+    padding-top: 30px;
+    padding-bottom: 100px;
+}
+
+.slider ul {
+    display: flex;
+    padding: 0;
+    width: 400%;
+    animation: movimiento 20s infinite alternate;
+}
+
+.slider li {
+    width: 100%;
+    list-style: none;
+}
+
+.slider img {
+    width: 420px;
+    height: 100%
+}
+
+@keyframes movimiento {
+    0% {
+        margin-left: 0%;
     }
-    
-    .footer {
-        background: rgba(63, 98, 143, 0.726);
+    20% {
+        margin-left: 0%;
     }
-    
-    .footer-content {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding-top: 80px;
-        padding-bottom: 80px;
+    25% {
+        margin-left: -100%;
     }
+    45% {
+        margin-left: -100%;
+    }
+    50% {
+        margin-left: -200%;
+    }
+    70% {
+        margin-left: -200%;
+    }
+    75% {
+        margin-left: -300%;
+    }
+    100% {
+        margin-left: -300%;
+    }
+}
+
+
+/* Pantalla Footer */
+
+.footer {
+    background: #B05E27;
+}
+
+.container-body {
+    display: flex;
+}
+
+.columna1 h1 {
+    font-size: 35px;
+}
+
+.columna1 p {
+    font-size: 20px;
+    margin-top: 10px;
+    margin-bottom: 50px;
+}
+
+.columna2 h1 {
+    font-size: 35px;
+}
+
+.columna2 .row8 {
+    margin-top: 20px;
+}
+
+.row8 img {
+    width: 30px;
+    height: 30px;
+}
